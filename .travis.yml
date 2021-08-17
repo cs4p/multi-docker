@@ -1,0 +1,34 @@
+language: generic
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t cs4p/react-test -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run -e CI=true cs4p/react-test npm run test -- --coverage
+
+after_success:
+  - docker build -t cs4p/multi-client ./client
+  - docker build -t cs4p/multi-nginx ./nginx
+  - docker build -t cs4p/multi-server ./server
+  - docker build -t cs4p/multi-worker ./worker
+  # Log in to Docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - docker push cs4p/multi-client
+  - docker push cs4p/multi-nginx
+  - docker push cs4p/multi-server
+  - docker push cs4p/multi-worker
+
+#deploy:
+#  provider: elasticbeanstalk
+#  region: "us-east-2"
+#  app: "docker-react"
+#  env: "dockerreact-env"
+#  bucket_name: "elasticbeanstalk-us-east-2-298266163798"
+#  bucket_path: "docker-react"
+#  on:
+#    branch: master
+#  access_key_id: $AWS_ACCESS_KEY
+#  secret_access_key: $AWS_SECRET_KEY
