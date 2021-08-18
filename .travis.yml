@@ -21,14 +21,14 @@ after_success:
   - docker push cs4p/multi-server
   - docker push cs4p/multi-worker
 
-#deploy:
-#  provider: elasticbeanstalk
-#  region: "us-east-2"
-#  app: "docker-react"
-#  env: "dockerreact-env"
-#  bucket_name: "elasticbeanstalk-us-east-2-298266163798"
-#  bucket_path: "docker-react"
-#  on:
-#    branch: master
-#  access_key_id: $AWS_ACCESS_KEY
-#  secret_access_key: $AWS_SECRET_KEY
+deploy:
+ provider: elasticbeanstalk
+ region: "us-east-2"
+ app: "docker-react"
+ env: "dockerreact-env"
+ bucket_name: "elasticbeanstalk-us-east-2-298266163798"
+ bucket_path: "docker-react"
+ on:
+   branch: master
+ access_key_id: $AWS_ACCESS_KEY 
+ secret_access_key: $AWS_SECRET_KEY 
