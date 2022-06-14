@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2022-06-14T14:54:37.885Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.5 Safari/605.1.15" version="20.0.1" etag="vXKnn-THzkgXP3e_w9Y8" type="github"><diagram id="Kn5Lh9Gbx85TKh9dMExx">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-14T15:03:02.799Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.5 Safari/605.1.15" etag="4mKMG7htpPxU5yMEkdH8" version="20.0.1" type="github">
+  <diagram id="Kn5Lh9Gbx85TKh9dMExx" name="Page-1">
+    <mxGraphModel dx="1347" dy="1405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9F5-c_OiXFqegcFUzqij-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="740" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-2" value="Physical Infrastructure" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="830" width="710" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-3" value="VM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="750" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-4" value="VM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="750" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-9" value="Docker Container" style="swimlane;horizontal=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="500" width="155" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-12" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="100" y="500" width="155" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-5" value="Docker Images" style="swimlane;horizontal=0;" vertex="1" parent="9F5-c_OiXFqegcFUzqij-12">
+          <mxGeometry width="155" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-6" value="Image 1&lt;br&gt;File System" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="9F5-c_OiXFqegcFUzqij-5">
+          <mxGeometry x="30" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-7" value="Image 2&lt;br&gt;File System" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="9F5-c_OiXFqegcFUzqij-12">
+          <mxGeometry x="30" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-8" value="Image 3&lt;br&gt;File System" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="9F5-c_OiXFqegcFUzqij-12">
+          <mxGeometry x="30" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-13" value="Docker Container" style="swimlane;horizontal=0;" vertex="1" parent="1">
+          <mxGeometry x="647.5" y="500" width="155" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-14" value="Docker Images" style="swimlane;horizontal=0;" vertex="1" parent="1">
+          <mxGeometry x="467.5" y="500" width="155" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-15" value="Image 1&lt;br&gt;File System" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="9F5-c_OiXFqegcFUzqij-14">
+          <mxGeometry x="30" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9F5-c_OiXFqegcFUzqij-16" value="Docker Hub" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="118" y="190" width="262" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
